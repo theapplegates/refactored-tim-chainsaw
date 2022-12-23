@@ -59,7 +59,7 @@ const securityHeaders = [
  **/
 module.exports = () => {
   images: {
-    formats: ['image/avif', 'image/webp']}
+    formats: ['image/avif']}
   const plugins = [withContentlayer, withBundleAnalyzer]
   return plugins.reduce((acc, next) => next(acc), {
     reactStrictMode: true,
